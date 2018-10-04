@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Esta es mi tienda</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+   <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <Style>
+    	.store{
+    		font-family: 'Indie Flower', cursive;
+    	}
+    </Style>
+    <script src="script/java.js"></script>
+ </head>
+<body>
+<div class="container"><!--Container1-->
+  <div class="row align-self-center text-center my-3">
+    <div class="col-2 ">
+       <picture>
+        <source srcset="images/store.jpg" type="image/svg+xml">
+        <img src="images/store.jpg" Class="img-fluid img-thumbnail rounded-circle" style= "width:130px;" alt="Store Guty">
+      </picture>
+    </div>
+      <div class="col-7 store">
+         <h1> My Store</h1>
+      </div>
+    <div class="col-3 row align-self-center">
+      <i class="fas fa-shopping-cart fa-2x mr-3"></i> Car
+    </div>
+  </div>
+</div>
+<div class="container"><!--Container2-->
+	<div class="row  my-4">
+		<div class="col-6">
+			<ul class="list-unstyled">
+			  <li class="media">
+			    <img class="mr-1" src="images/pan.jpg" style= "width:130px;" alt="Generic placeholder image">
+			    <div class="media-body">
+			      <h5 class="mt-0 mb-1 ml-3">Pan</h5>
+					<input type="number"  id="panqty" class="form-control ml-2"  aria-label="Amount (to the nearest dollar)">
+					<input type="hidden" id="val_pan" value="500" >
+			    </div>
+			  </li>
+			  <li class="media my-4">
+			    <img class="mr-3" src="images/leche.jpg" style= "width:130px;" alt="Generic placeholder image">
+			    <div class="media-body">
+			      <h5 class="mt-0 mb-1">Leche</h5>
+			        <input type="number" id= "lecheqty" class="form-control" aria-label="Amount (to the nearest dollar)">
+							<input type="hidden" id="val_leche" value="2000" >
+			    </div>
+			  </li>
+			  <li class="media">
+			    <img class="mr-3" src="images/huevos.jpg" style= "width:130px;" alt="Generic placeholder image">
+			    <div class="media-body">
+			      <h5 class="mt-0 mb-1">Huevos</h5>
+					<input type="number" id="huevosqty" class="form-control" aria-label="Amount (to the nearest dollar)">
+					<input type="hidden" id="val_huevos" value="300" >
+			    </div>
+			  </li>
+			</ul>
+		</div>
+		<div class="col-6">
+		<ul class="list-unstyled">
+		  <li class="media">
+		    <img class="mr-1" src="images/jabon.jpg" style= "width:130px;" alt="Generic placeholder image">
+		    <div class="media-body">
+		      <h5 class="mt-0 mb-1">Jabon</h5>
+				<input type="text" id="jabonqty" class="form-control" aria-label="Amount (to the nearest dollar)">
+				<input type="hidden" id="val_jabon" value="1500" >
+		    </div>
+		  </li>
+		  <li class="media my-4">
+		    <img class="mr-3" src="images/Shampoo.jpg" style= "width:90px;" alt="Generic placeholder image">
+		    <div class="media-body">
+		      <h5 class="mt-0 mb-1 ml-4">Shampoo</h5>
+		     	<input type="text" id="shampooqty" class="form-control ml-4" aria-label="Amount (to the nearest dollar)">
+					<input type="hidden" id="val_shampoo" value="4000" >
+		    </div>
+		  </li>
+		  <li class="media">
+		    <img class="mr-3" src="images/crema.jpg" style= "width:130px;" alt="Generic placeholder image">
+		    <div class="media-body">
+		      <h5 class="mt-0 mb-1">Crema Dental</h5>
+				<input type="text" id="cremaqty" class="form-control" aria-label="Amount (to the nearest dollar)">
+				<input type="hidden" id="val_crema" value="2500" >
+	    	</div>
+	  	</li>
+		</ul>
+		</div>
+	</div>
+		<div class="row my-5">
+			<div class="col">Subtotal</div>
+				<div class="col">
+					<input type="text" id="subtotal1" class="form-control"  aria-label="Amount (to the nearest dollar)">
+  			</div>
+			<div class="col col-lg-2"></div>
+			<div class="col">Subtotal</div>
+			<div class="col">
+				<input type="number" id="subtotal2" class="form-control" aria-label="Amount (to the nearest dollar)">
+			</div>
+			<div class="w-100"></div>
+			<div class="col">IVA</div>
+			<div class="col">
+				<input type="text" id="iva1" class="form-control" aria-label="Amount (to the nearest dollar)">
+				<input type="hidden" id="valiva1" value="0.19">
+			</div>
+			<div class="col col-lg-2"></div>
+			<div class="col">IVA</div>
+			<div class="col">
+				<input type="text" id="iva2" class="form-control" aria-label="Amount (to the nearest dollar)">
+				<input type="hidden" id="valiva2" value="0.10">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-6 align-self-center text-center">
+				<h3>Factura</h3>
+				<div class="w-100"></div>
+				<div class="col">
+					<button type="button" class="btn btn-secondary btn-lg" onclick="subtotal();">Calcular</button>
+				</div>
+			</div>
+			<div class="col-6">
+				<div class="row">
+					<div class="col font-weight-bold">Subtotal</div>
+					<div class="col">
+						<input type="text" id ="subtotalfinal" class="form-control" aria-label="Amount (to the nearest dollar)">
+					</div>
+					<div class="w-100"></div>
+					<div class="col font-weight-bold">IVA</div>
+					<div class="col">
+						<input type="text" id = "ivafinal" class="form-control" aria-label="Amount (to the nearest dollar)">
+					</div>
+					<div class="w-100"></div>
+					<div class="col font-weight-bold">Total</div>
+					<div class="col">
+						<input type="text" id = "total" class="form-control" aria-label="Amount (to the nearest dollar)">
+					</div>
+				</div>
+			</div>
+		</div>
+
+</div>
+<div class="container"><!--Container3-->
+	<div class="row align-self-center mt-3">
+		<div class="col text text-center">
+			<i class="fas fa-registered fa-2x"> My Store.com</i>
+		</div>
+</body>
+</html>
